@@ -1,0 +1,15 @@
+# OS junk
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.log
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local test servers
+node_modules/
+package-lock.json
