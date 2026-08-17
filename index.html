@@ -510,7 +510,7 @@ html[data-theme="dark"] .t-extra{--tcol:#c07ab0;}
     <div class="tab-preview" id="tabPreview"></div>
     <div class="media-panels">
 
-    <div class="screens media-panel active" id="panel-screens">
+    <div class="screens media-panel" id="panel-screens">
     <div class="screens-head">
       <div>
         <div class="eyebrow">Field Footage · Original Screenshots</div>
@@ -1033,7 +1033,7 @@ const MEDIA_PREVIEWS = {
   news:     NEWS_DATA.slice(0,6).map(d=>"images/news/"+(d.t||d.f)),
   videos:   VIDEO_FILES.map(v=>"images/video-posts/"+v.f.replace(".mp4",".jpg"))
 };
-let activeTab = "screens";
+let activeTab = null;
 const tabPreview = document.getElementById('tabPreview');
 
 function showPreview(id){
